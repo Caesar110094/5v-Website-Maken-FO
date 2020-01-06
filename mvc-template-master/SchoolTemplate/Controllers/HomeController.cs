@@ -10,7 +10,7 @@ namespace SchoolTemplate.Controllers
   {
     public IActionResult Index()
     {
-      //string connectionString = "Server=172.16.160.21;Port=3306;Database=;Uid=;Pwd=;";
+      //string connectionString = "Server=172.16.160.21;Port=3306;Database=110158 ;Uid=110158 ;Pwd=Spectralis2;";
    
       //using (MySqlConnection conn = new MySqlConnection(connectionString))
       //{
