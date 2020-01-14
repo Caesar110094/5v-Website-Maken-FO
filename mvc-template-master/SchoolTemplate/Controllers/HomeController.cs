@@ -63,7 +63,7 @@ namespace SchoolTemplate.Controllers
     {
       return View();
     }
-   
+   [Route("Showall")]
    public IActionResult Showall()
     {
       return View();
