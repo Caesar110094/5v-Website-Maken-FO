@@ -2,17 +2,23 @@
 <html>
    <head>
     <link rel="stylesheet" href="~/css/site.css" />
+       <H1>Welcome</H1>
    </head>
    <body>
+       <nav class="main-nav">
+           <ul>
+               <li><a class="active" href="">Home</a></li>
+               <li><a href="">Shows</a></li>
+               <li><a href="">Gallery</a></li>
+               <li><a href="">Details</a></li>
+               <li><a href="">About</a></li>
+           </ul>
+       </nav>
+
+
+
        @RenderBody()
 
-       <H1>Welcome</H1>
-       <ul>
-           <li><h2>Home</h2></li>
-           <li><h2>Shows</h2></li>
-           <li><h2>Gallery</h2></li>
-           <li><h2>Details</h2>li>
-           <li><h2>About</h2>li>
-       </ul>
+
    </body>
 </html>
