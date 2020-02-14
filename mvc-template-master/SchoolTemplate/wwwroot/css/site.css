@@ -70,7 +70,9 @@ h1 {
 }
 
 /* Menu */
-
+ul.a {
+    list-style-type: none;
+}
 .main-nav a {
     display: inline-block;
     border-radius: 5px 5px 5px 5px;
