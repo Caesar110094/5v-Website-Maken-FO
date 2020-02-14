@@ -79,20 +79,25 @@ h1 {
     color: black;
     text-decoration: none;
     padding: 5px 10px 5px 10px;
-    margin: 5px 5px 5px 5px;
+    width:10%;
     position: relative;
     top: 0px;
     transition: top 300ms ease;
+    color: white;
+    text-align: center;
+    font-size: 36px;
 }
 
+ul.a {
+    list-style-type: none;
+}
     .main-nav a:hover {
-        background-color: rgba(201, 201, 201);
+        background-color: #c9c9c9;
     }
 
     .main-nav a.active {
-        background-color: darkgray
+        background-color: #77AAC7
     }
-
 
 h2 {
     width: 20%;
@@ -101,4 +106,5 @@ h2 {
     top: 1.62%;
     background: #5CB5F5;
     text-align: center;
+    
 }
