@@ -17,37 +17,12 @@ namespace SchoolTemplate.Controllers
     {
       List<Toneelstuk> toneelstukken = new List<Toneelstuk>();
       // uncomment deze regel om producten uit je database toe te voegen
-      toneelstukken = GetToneelstuk();
+      toneelstukken = GetToneelstukken();
 
       return View(toneelstukken);
     }
 
-    private List<Toneelstuk> GetToneelstuk() {
-      List<Toneelstuk> toneelstukken = new List<Toneelstuk>();
-
-      using (MySqlConnection conn = new MySqlConnection(connectionString))
-      {
-        conn.Open();
-        MySqlCommand cmd = new MySqlCommand("select * from toneelstuk", conn);
-
-        using (var reader = cmd.ExecuteReader())
-        {
-          while (reader.Read())
-          {
-            Toneelstuk f = new Toneelstuk
-            {
-              Id = Convert.ToInt32(reader["Id"]),
-              Naam = reader["Naam"].ToString(),
-              Beschrijving = reader["bescrijving"].ToString(),
-              Datum = DateTime.Parse(reader["datum"].ToString()),
-            };
-            toneelstukken.Add(f);
-          }
-        }
-      }
-
-      return toneelstukken;
-    }
+   
 
     public IActionResult Privacy()
     {
@@ -73,10 +48,12 @@ namespace SchoolTemplate.Controllers
         {
             return View();
         }
-        [Route("Shows")]
-        public IActionResult Shows()
+        [Route("Shows/{id}")]
+        public IActionResult Shows(string id)
         {
-            return View();
+            var model = GetToneelstuk(id);
+
+            return View(model);
         }
 
 
@@ -86,5 +63,62 @@ namespace SchoolTemplate.Controllers
     {
       return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-  }
+
+
+        private Toneelstuk GetToneelstuk(string id)
+        {
+            List<Toneelstuk> toneelstukken = new List<Toneelstuk>();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand($"select * from toneelstuk where id = {id}", conn);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Toneelstuk f = new Toneelstuk
+                        {
+                            Id = Convert.ToInt32(reader["Id"]),
+                            Naam = reader["Naam"].ToString(),
+                            Beschrijving = reader["beschrijving"].ToString(),
+                            Datum = DateTime.Parse(reader["datum"].ToString()),
+                        };
+                        toneelstukken.Add(f);
+                    }
+                }
+            }
+
+            return toneelstukken[0];
+        }
+
+        private List<Toneelstuk> GetToneelstukken()
+        {
+            List<Toneelstuk> toneelstukken = new List<Toneelstuk>();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from toneelstuk", conn);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Toneelstuk f = new Toneelstuk
+                        {
+                            Id = Convert.ToInt32(reader["Id"]),
+                            Naam = reader["Naam"].ToString(),
+                            Beschrijving = reader["beschrijving"].ToString(),
+                            
+                        };
+                        toneelstukken.Add(f);
+                    }
+                }
+            }
+
+            return toneelstukken;
+        }
+    }
 }
