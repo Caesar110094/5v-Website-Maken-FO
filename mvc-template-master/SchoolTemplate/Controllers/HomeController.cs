@@ -11,7 +11,7 @@ namespace SchoolTemplate.Controllers
   public class HomeController : Controller
   {
     // zorg ervoor dat je hier je gebruikersnaam (leerlingnummer) en wachtwoord invult
-    string connectionString = "Server=172.16.160.21;Port=3306;Database=fastfood;Uid=110094;Pwd=iNiANTHa;";
+    string connectionString = "Server=172.16.160.21;Port=3306;Database=110094;Uid=110094;Pwd=iNiANTHa;";
 
     public IActionResult Index()
     {
@@ -58,8 +58,30 @@ namespace SchoolTemplate.Controllers
     {
       return View();
     }
+        [Route("About")]
+        public IActionResult About()
+        {
+            return View();
+        }
+        [Route("Details")]
+        public IActionResult Details()
+        {
+            return View();
+        }
+        [Route("Gallery")]
+        public IActionResult Gallery()
+        {
+            return View();
+        }
+        [Route("Shows")]
+        public IActionResult Shows()
+        {
+            return View();
+        }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
       return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
