@@ -9,9 +9,9 @@
     @foreach (Toneelstuk p in Model)
     {
       <li>
-        @p.Naam @p.Beschrijving euro
+        <a href="/shows/@p.Id">@p.Naam</a>
       </li>
     }
   </ul>
-  <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
 </div>
