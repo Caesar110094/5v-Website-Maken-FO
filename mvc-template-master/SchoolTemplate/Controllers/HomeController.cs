@@ -15,11 +15,9 @@ namespace SchoolTemplate.Controllers
 
     public IActionResult Index()
     {
-      List<Toneelstuk> toneelstukken = new List<Toneelstuk>();
-      // uncomment deze regel om producten uit je database toe te voegen
-      toneelstukken = GetToneelstukken();
 
-      return View(toneelstukken);
+
+      return View();
     }
 
     public IActionResult Privacy()
@@ -39,7 +37,12 @@ namespace SchoolTemplate.Controllers
     [Route("Details")]
     public IActionResult Details()
     {
-      return View();
+      List<Toneelstuk> toneelstukken = new List<Toneelstuk>();
+      // uncomment deze regel om producten uit je database toe te voegen
+      toneelstukken = GetToneelstukken();
+
+      return View(toneelstukken);
+      
     }
     [Route("Gallery")]
     public IActionResult Gallery()

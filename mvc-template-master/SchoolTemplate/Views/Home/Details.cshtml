@@ -1,18 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="~/css/site.css" />
-   
-</head>
-<body>
-    <nav class="main-nav">
-      
-    </nav>
+﻿@using SchoolTemplate.Database;
+@model List<Toneelstuk>
+@{
+  ViewData["Title"] = "Home Page";
+}
+
+<ul>
+  @foreach (Toneelstuk p in Model)
+  {
+    <li>
+      <a href="/shows/@p.Id">@p.Naam</a>
+    </li>
+  }
+</ul>
 
 
 
 
 
-
-</body>
-</html>

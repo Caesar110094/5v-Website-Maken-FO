@@ -1,18 +1,65 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="~/css/site.css" />
-    
-</head>
-<body>
-    <nav class="main-nav">
-      
-    </nav>
+﻿ <nav class="main-nav">
+
+  </nav>
+
+  <p> Neem alstublieft contact op met ons via onze mail of het formulier hieronder</p>
 
 
+  <form>
+    <fieldset>
+      <legend>Formulier</legend>
+      <FORM METHOD="post" ACTION="mailto:mijnnaam@gmail.com">
+        Naam:
+        <BR>
+        <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+        <BR> Geslacht:
 
-   
+        <BR> Man:
+        <INPUT TYPE="radio" NAME="geslacht" VALUE="man"> Vrouw:
+        <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw"> </BR>
+
+        E-mail adres:
+        <BR> 
+        <INPUT TYPE="text" NAME="email" placeholder="gmail.com" required>
+        <SIZE ="30">
+          </BR>
+
+          Telefoonnummer:
+          <BR>
+          <INPUT TYPE="text" NAME="+31 " VALUE="+31 ">
+          <SIZE ="30">
+            </BR>
 
 
-</body>
-</html>
+            Reden contact:
+            <BR>
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:
+            <BR>
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:
+            <BR>
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:
+            <BR>
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="niks"> Niks
+            <BR>
+            Land:
+            <BR>
+            <INPUT TYPE="text" NAME="email" placeholder="Nederland" required>
+            <SIZE ="30">
+              </BR>
+              Country code:
+              <BR>
+              <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+              </BR>
+
+              Bericht
+              <BR>
+              <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
+              <BR>
+
+              <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
+     </FORM>
+    </fieldset>
+  </form>
+ 
+
+

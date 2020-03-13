@@ -1,17 +1,1 @@
-﻿@using SchoolTemplate.Database;
-@model List<Toneelstuk>
-@{
-  ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-  <ul>
-    @foreach (Toneelstuk p in Model)
-    {
-      <li>
-        <a href="/shows/@p.Id">@p.Naam</a>
-      </li>
-    }
-  </ul>
-
-</div>
+﻿
