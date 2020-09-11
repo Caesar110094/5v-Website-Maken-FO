@@ -5,70 +5,49 @@
   <p> Neem alstublieft contact op met ons via onze mail of het formulier hieronder</p>
 
 
-  <form>
+
     <fieldset>
       <legend>Formulier</legend>
-      <FORM METHOD="post" ACTION="mailto:mijnnaam@gmail.com">
+      <form METHOD="post" ACTION="mailto:mijnnaam@gmail.com">
         Voornaam:
-        <BR>
         <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
-        @HTML.ValendationMessagefor(m => m.Voornaam)
 
         Achternaam:
-        <BR>
         <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
-        @HTML.ValendationMessagefor(m => m.Achternaam)
 
-        Geslacht
-        <BR> Geslacht:
-
-        <BR> Man:
+        Geslacht:
+        Man:
         <INPUT TYPE="radio" NAME="geslacht" VALUE="man"> Vrouw:
-        <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw"> </BR>
+        <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw"> 
 
-        E-mail adres:
-        <BR>
-        <INPUT TYPE="text" NAME="email" placeholder="gmail.com" required>
-        <SIZE ="30">
-          </BR>
-          @HTML.ValendationMessagefor(m => m.email)
+        E-mail adres:       
+        <INPUT TYPE="text" NAME="email" SIZE ="30" placeholder="gmail.com" required>
+         
 
-          Telefoonnummer:
-          <BR>
-          <INPUT TYPE="number" NAME="Telefoonnummer" VALUE="+31 " required>
-          <SIZE ="30">
-            </BR>
-            @HTML.ValendationMessagefor(m => m.Telefoonnummer)
+          Telefoonnummer:        
+          <INPUT TYPE="number" NAME="Telefoonnummer" SIZE ="30" VALUE="+31 " required>
 
-            Reden contact:
-            <BR>
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:
-            <BR>
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:
-            <BR>
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:
-            <BR>
+            
+
+            Reden contact:    
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:            
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:            
+            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:           
             <INPUT TYPE="checkbox" NAME="redencontact" VALUE="niks"> Niks
-            <BR>
-            Land:
-            <BR>
-            <INPUT TYPE="text" NAME="email" placeholder="Nederland" required>
-            <SIZE ="30">
-              </BR>
-              Country code:
-              <BR>
+            
+            Land:           
+            <INPUT TYPE="text" NAME="email" SIZE ="30" placeholder="Nederland" required>
+           
+              Country code:              
               <input type="number" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
-              </BR>
+           
 
-              Bericht
-              <BR>
+              Bericht       
               <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
-              </BR>
-              @HTML.ValendationMessagefor(m => m.Bericht)
-
-              <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
-</FORM>
+             
+        
+            <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
+</form>
     </fieldset>
-  </form>
- 
+
 
