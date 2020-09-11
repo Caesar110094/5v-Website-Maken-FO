@@ -1,53 +1,49 @@
-﻿ <nav class="main-nav">
+﻿<p> Neem alstublieft contact op met ons via onze mail of het formulier hieronder</p>
 
-  </nav>
-
-  <p> Neem alstublieft contact op met ons via onze mail of het formulier hieronder</p>
-
-
-
+<div class="container">
+  <form METHOD="post" ACTION="mailto:mijnnaam@gmail.com">
     <fieldset>
       <legend>Formulier</legend>
-      <form METHOD="post" ACTION="mailto:mijnnaam@gmail.com">
-        Voornaam:
-        <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
 
-        Achternaam:
-        <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
 
-        Geslacht:
-        Man:
-        <INPUT TYPE="radio" NAME="geslacht" VALUE="man"> Vrouw:
-        <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw"> 
+      Voornaam:
+      <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
 
-        E-mail adres:       
-        <INPUT TYPE="text" NAME="email" SIZE ="30" placeholder="gmail.com" required>
-         
+      Achternaam:
+      <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
 
-          Telefoonnummer:        
-          <INPUT TYPE="number" NAME="Telefoonnummer" SIZE ="30" VALUE="+31 " required>
+      Geslacht:
+      Man:
+      <INPUT TYPE="radio" NAME="geslacht" VALUE="man"> Vrouw:
+      <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw">
 
-            
+      E-mail adres:
+      <INPUT TYPE="text" NAME="email" SIZE="30" placeholder="gmail.com" required>
 
-            Reden contact:    
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:            
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:            
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:           
-            <INPUT TYPE="checkbox" NAME="redencontact" VALUE="niks"> Niks
-            
-            Land:           
-            <INPUT TYPE="text" NAME="email" SIZE ="30" placeholder="Nederland" required>
-           
-              Country code:              
-              <input type="number" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
-           
 
-              Bericht       
-              <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
-             
-        
-            <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
-</form>
+      Telefoonnummer:
+      <INPUT TYPE="number" NAME="Telefoonnummer" SIZE="30" VALUE="+31 " required>
+
+
+
+      Reden contact:
+      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:
+      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:
+      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:
+      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="niks"> Niks
+
+      Land:
+      <INPUT TYPE="text" NAME="email" SIZE="30" placeholder="Nederland" required>
+
+      Country code:
+      <input type="number" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
+
+
+      Bericht:
+      <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
+
+      <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
     </fieldset>
-
+  </form>
+  </div>
 
