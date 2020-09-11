@@ -8,7 +8,8 @@ namespace SchoolTemplate.Models
         public string Voornaam { get; set; }
         public string Achternaam { get; set; }
         public DateTime Geboortedatum { get; set; }
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage ="E-mail is verplicht")]
+        [EmailAddress(ErrorMessage ="Geen bestaand E-mailadres")]
         public string Email { get; set; }
+        public string Telefoonnummer { get; set; }
     }
