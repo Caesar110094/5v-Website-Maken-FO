@@ -9,9 +9,17 @@
     <fieldset>
       <legend>Formulier</legend>
       <FORM METHOD="post" ACTION="mailto:mijnnaam@gmail.com">
-        Naam:
+        Voornaam:
         <BR>
         <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+        @HTML.ValendationMessagefor(m => m.Voornaam)
+
+        Achternaam:
+        <BR>
+        <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+        @HTML.ValendationMessagefor(m => m.Achternaam)
+
+        Geslacht
         <BR> Geslacht:
 
         <BR> Man:
@@ -19,17 +27,18 @@
         <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw"> </BR>
 
         E-mail adres:
-        <BR> 
+        <BR>
         <INPUT TYPE="text" NAME="email" placeholder="gmail.com" required>
         <SIZE ="30">
           </BR>
+          @HTML.ValendationMessagefor(m => m.email)
 
           Telefoonnummer:
           <BR>
-          <INPUT TYPE="text" NAME="+31 " VALUE="+31 " required>
+          <INPUT TYPE="number" NAME="Telefoonnummer" VALUE="+31 " required>
           <SIZE ="30">
             </BR>
-
+            @HTML.ValendationMessagefor(m => m.Telefoonnummer)
 
             Reden contact:
             <BR>
@@ -54,12 +63,12 @@
               Bericht
               <BR>
               <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
-              <BR>
+              </BR>
+              @HTML.ValendationMessagefor(m => m.Bericht)
 
               <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
-     </FORM>
+</FORM>
     </fieldset>
   </form>
  
-
 
