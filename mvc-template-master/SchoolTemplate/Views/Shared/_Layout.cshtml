@@ -2,19 +2,22 @@
 <html>
    <head>
     <link rel="stylesheet" href="~/css/site.css" />
-       <H1>Welcome</H1>
+    <style>
+        main.nav {
+            outline-width:  5px;
+            outline-color: green;
+        }
+    </style>
    </head>
    <body>
-       <nav class="main-nav">
-           <ul class="a">
-               <li><a class="active" href="/">Home</a></li>
-               <li><a href="/Shows">Shows</a></li>
-               <li><a href="/Gallery">Gallery</a></li>
-               <li><a href="/Details">Details</a></li>
-               <li><a href="/About">About</a></li>
-           </ul>
-       </nav>
-
+    <nav class="main-nav"><h3>
+           <a class="active" href="/">Home</a>
+           <a href="/Shows">Shows</a>
+           <a href="/Gallery">Gallery</a>
+           <a href="/Details">Details</a>
+           <a href="/About">About</a>
+    </h3></nav>+
+       <H1>Welcome</H1>
 
 
        @RenderBody()
