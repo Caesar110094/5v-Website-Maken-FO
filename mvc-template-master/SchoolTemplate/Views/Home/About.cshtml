@@ -5,45 +5,60 @@
     <fieldset>
       <legend>Formulier</legend>
 
+      <div>
+        <label for="fname">Voornaam:</label>
+        <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+      </div>
 
-      Voornaam:
-      <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+      <div>
+        <label for="sname">Achternaam:</label>
+        <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+      </div>
 
-      Achternaam:
-      <INPUT TYPE="text" NAME="jouwnaam" SIZE="30" required>
+      <div>
+        <label for="sex">Geslacht:</label>
+        <INPUT TYPE="radio" NAME="geslacht" VALUE="man"> Vrouw:
+        <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw">
+      </div>
 
-      Geslacht:
-      Man:
-      <INPUT TYPE="radio" NAME="geslacht" VALUE="man"> Vrouw:
-      <INPUT TYPE="radio" NAME="geslacht" VALUE="vrouw">
+      <div>
+        <label for="sex">Geslacht:</label>
+        <INPUT TYPE="text" NAME="email" SIZE="30" placeholder="gmail.com" required>
+      </div>
 
-      E-mail adres:
-      <INPUT TYPE="text" NAME="email" SIZE="30" placeholder="gmail.com" required>
-
-
-      Telefoonnummer:
-      <INPUT TYPE="number" NAME="Telefoonnummer" SIZE="30" VALUE="+31 " required>
-
-
-
-      Reden contact:
-      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:
-      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:
-      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:
-      <INPUT TYPE="checkbox" NAME="redencontact" VALUE="niks"> Niks
-
-      Land:
-      <INPUT TYPE="text" NAME="email" SIZE="30" placeholder="Nederland" required>
-
-      Country code:
-      <input type="number" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
+      <div>
+        <label for="telephone">Telefoonnummer:</label>
+        <INPUT TYPE="number" NAME="Telefoonnummer" SIZE="30" VALUE="+31 " required>
+      </div>
 
 
-      Bericht:
-      <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
+      <div>
+        <label for="reason">Reden:</label>
+        <INPUT TYPE="checkbox" NAME="redencontact" VALUE="klacht"> Klacht:
+        <INPUT TYPE="checkbox" NAME="redencontact" VALUE="reactie"> Reactie:
+        <INPUT TYPE="checkbox" NAME="redencontact" VALUE="vraag"> Vraag:
+      </div>
 
-      <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
+      <div>
+        <label for="country">Land:</label>
+        <INPUT TYPE="text" NAME="email" SIZE="30" placeholder="Nederland" required>
+      </div>
+
+      <div>
+        <label for="Message">Bericht:</label>
+        <TEXTAREA NAME="bericht" ROWS="8" COLS="40" required></TEXTAREA>
+      </div>
+
+      <div>
+        <label for="country_code">Country code:</label>
+        <input type="number" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
+      </div>
+
+      <div>
+        <INPUT TYPE="submit" VALUE="Verzenden" NAME="verzendbericht">
+      </div>
     </fieldset>
   </form>
   </div>
+
 

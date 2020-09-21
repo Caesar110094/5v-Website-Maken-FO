@@ -74,17 +74,20 @@ ul.a {
     list-style-type: none;
 }
 .main-nav a {
-    display: inline-block;
-    border-radius: 5px 5px 5px 5px;
-    border-bottom: 0px solid white;
-    background-color: #5CB5F5;
-    color: black;
-    text-decoration: none;
-    padding: 5px 10px 5px 10px;
-    margin: 5px 5px 5px 5px;
-    position: relative;
-    top: 0px;
-    transition: top 300ms ease;
+  display: inline-block;
+  background-color: #5CB5F5;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  transition: top 300ms ease;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+li.a {
+  float: left;
 }
 
     .main-nav a:hover {
@@ -95,6 +98,11 @@ ul.a {
         background-color: darkgray
     }
 
+.item {
+  flex-grow: 1; /* default 0 */
+  display: inline-flex;
+  flex-direction: row;
+}
 
 h2 {
     width: 20%;
@@ -114,5 +122,6 @@ p {
 div.container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 5px 10px;
+  margin: 20px;
 }
