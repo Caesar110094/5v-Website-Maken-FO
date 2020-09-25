@@ -59,15 +59,16 @@ body {
   display: grid;
   grid-column-gap: 5px;
   grid-template-columns: auto auto auto;
-  background-color: grey;
+  background-color: skyblue;
   padding: 10px;
 }
 
 .Shows > a {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
+  border: 3px solid black;
   text-align: center;
   font-size: 30px;
+  color:lightgrey;
 }
 
 /* Header*/
