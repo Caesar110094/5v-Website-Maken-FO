@@ -54,9 +54,22 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
-.Shows{
-    font-size: large;
+.Shows {
+  font-size: large;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  background-color: grey;
+  padding: 10px;
 }
+
+.Shows > a {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
 /* Header*/
 h1 {
     position:center;
