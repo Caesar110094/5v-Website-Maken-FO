@@ -24,10 +24,11 @@ namespace SchoolTemplate.Controllers
     {
       return View();
     }
-    [Route("shows")]
-    public IActionResult Showall()
+    [Route("Shows")]
+    public IActionResult Shows()
     {
-      return View();
+      var toneelstukken = GetToneelstukken();
+      return View(toneelstukken);
     }
     [Route("About")]
     public IActionResult About()

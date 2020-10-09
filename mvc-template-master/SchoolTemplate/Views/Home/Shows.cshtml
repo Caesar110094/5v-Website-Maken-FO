@@ -1,12 +1,18 @@
-﻿@model SchoolTemplate.Database.Toneelstuk
+﻿@using SchoolTemplate.Database;
+@model List<Toneelstuk>
 @{
-    ViewData["Title"] = "Shows";
+  ViewData["Title"] = "Home Page";
 }
+<ul class="Shows">
 
-<h1>@Model.Naam</h1>
+  @foreach (Toneelstuk p in Model)
+  {
+    <li>
+      <a href="/shows/@p.Id">@p.Naam</a>
+    </li>
+  }
 
-<p>@Model.Beschrijving</p>
-
+</ul>
 
 
 
