@@ -59,16 +59,17 @@ body {
   display: grid;
   grid-column-gap: 5px;
   grid-template-columns: auto auto auto;
-  background-color: grey;
+  background-color: skyblue;
   padding: 10px;
 }
 
-  .Shows > a {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 30px;
-  }
+.Shows > a {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid black;
+  text-align: center;
+  font-size: 30px;
+  color:lightgrey;
+}
 
 /* Header*/
 h1 {
@@ -89,22 +90,17 @@ ul.a {
     list-style-type: none;
 }
 .main-nav a {
-  display: block;
+  display: inline-block;
   background-color: #5CB5F5;
   color: black;
   text-decoration: none;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+  position: relative;
   transition: top 300ms ease;
   float: left;
   text-align: center;
   overflow: hidden;
   width: 20%;
   font-size: 50px;
-  flex-direction: column ;
 }
 
 li.a {
