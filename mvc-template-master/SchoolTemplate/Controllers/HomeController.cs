@@ -50,8 +50,8 @@ namespace SchoolTemplate.Controllers
     {
       return View();
     }
-    [Route("Shows/{id}")]
-    public IActionResult Shows(string id)
+    [Route("ShowsDetail/{id}")]
+    public IActionResult ShowsDetail(string id)
     {
       var model = GetToneelstuk(id);
 
