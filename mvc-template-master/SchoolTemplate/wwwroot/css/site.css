@@ -147,6 +147,8 @@ div.container {
 
 
 body {
-  background-image: url("https://i.pinimg.com/originals/2f/70/40/2f7040f073b087e20aabc64c7cd489fa.gif");
+    background-image: url("https://i.pinimg.com/originals/2f/70/40/2f7040f073b087e20aabc64c7cd489fa.gif");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
