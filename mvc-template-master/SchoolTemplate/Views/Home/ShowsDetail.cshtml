@@ -1,5 +1,12 @@
-﻿@{
-  ViewData["Title"] = "Toneelstukken";
-}
+﻿
 
-<h1>@ViewData["id"]</h1>
+@{
+    ViewData["Title"] = "Toneelstukken";
+}
+<body>
+<ul>
+    <li><h3>@Model.Naam</h3></li>
+
+    <li><p>@Model.Beschrijving</p></li>
+    </ul>
+</body>
